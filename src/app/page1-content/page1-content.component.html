@@ -1,0 +1,102 @@
+<div class="page1Content">
+  <div class="container">
+    <div class="block" id="content1" (click) = "onSelected()" (mousedown) = "onMousedown()">
+      <p class="title1">游戏人生</p>
+      <article class="article1">向前走，一直到尽头</article>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="block" id="content2" (click) = "onSelected2()" (mousedown) = "onMousedown2()">
+      <img src="../../assets/img/content2-2.jpg" alt="game" class="title2">
+      <article class="article2">今日游戏</article>
+      <div id="contentFoot">
+        <p id="gameTitle">英雄联盟：英雄对战MOBA竞技网游-电子竞技类游戏</p>
+        <div id="button" (click) = "onSelected2_2()" (mousedown) = "onMousedown2_2()">获 取</div>
+        <p id="gameContent">致力于推动全球电子竞技的发展</p>
+        <p id="buttonDescribe">App内购买项目</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="block" id="content3" (click) = "onSelected3()" (mousedown) = "onMousedown3()">
+      <div class="titlePhoto"></div>
+      <div>
+        <p class="title1">生活解决方案</p>
+        <article class="article1">让配色不再是难题</article>
+      </div>  
+    </div>
+  </div>
+  <div class="container">
+    <div class="block" id="content4" (click) = "onSelected4()" (mousedown) = "onMousedown4()">
+      <div id="photoTitle">
+          <p class="title1">今日主题</p>
+          <article class="article1">骑士精神</article>
+      </div>
+      <div id="contentPhoto"></div>  
+    </div>
+  </div>
+  <div class="container">
+    <div class="block" id="content5" (click) = "onSelected5()" (mousedown) = "onMousedown5()">
+        <div class="titlePhoto" id="radio">
+          <video id="video" src="../../assets/img/bug.mp4" muted autoplay loop oncanplay="this.muted = 'true'" (mouseover) = "mouseInVideo()">不支持html5</video>
+        </div>
+        <div>
+          <p class="title1">APP x 文化</p>
+          <article class="article1">离开办公室，生活开始</article>
+        </div>  
+    </div>
+  </div>
+  <div class="container">
+    <div class="block" id="content6" (click) = "onSelected6()" (mousedown) = "onMousedown6()">
+      <p class="title1">今日主题</p>
+      <article class="article1">镜头里的盎然秋意</article>
+      <div class="item" id="item1">
+        <img src="../../assets/img/smalllogo1.jpg" alt="logo" class="logo">
+        <div class="appTotalDetail">
+          <div class="detail">
+            <p class="appName">边境之旅</p>
+            <article class="appDetail">徒步生存手游</article>
+          </div>
+          <div id="button2" (click)="onSelected6_1()">￥6.00</div>
+        </div>
+      </div>
+      <div class="item" id="item2">
+        <img src="../../assets/img/smalllogo2.jpg" alt="logo" class="logo">
+        <div class="appTotalDetail">
+          <div class="detail">
+            <p class="appName">英雄联盟</p>
+            <article class="appDetail">电子竞技类游戏</article>
+          </div>
+          <div id="button2" (click)="onSelected6_1()">￥18.00</div>
+        </div>
+      </div>
+      <div class="item" id="item3">
+        <img src="../../assets/img/smalllogo3.jpg" alt="logo" class="logo">
+        <div class="appTotalDetail">
+          <div class="detail">
+            <p class="appName">一心院</p>
+            <article class="appDetail">一座可以“感知”意念的禅院</article>
+          </div>
+          <div id="buttonDetail">
+            <div id="button2" (click)="onSelected6_1()">获取</div>
+            <p id="buttonDescribe">App内购买项目</p>
+          </div>
+        </div>
+      </div>
+      <div class="item" id="item4">
+        <img src="../../assets/img/smalllogo4.jpg" alt="logo" class="logo">
+        <div class="appTotalDetail">
+          <div class="detail">
+            <p class="appName">怪物和弦：快乐玩音乐</p>
+            <article class="appDetail">学习吉他和乌克丽丽</article>
+          </div>
+          <div id="buttonDetail">
+            <div id="button2" (click)="onSelected6_1()">获取</div>
+            <p id="buttonDescribe">App内购买项目</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

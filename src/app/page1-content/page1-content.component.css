@@ -1,0 +1,218 @@
+article{
+    font-size: 2rem;
+    margin: 0rem 1.5rem;
+    border: 0rem;
+    padding: 0rem;
+}
+p{
+    margin: 1rem 1.5rem;
+    border: 0rem;
+    padding: 0rem;
+}
+.page1Content{
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.container{
+    width: 28rem;
+    height: 31rem;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.block{
+    width: 27rem;
+    height: 30rem;
+    margin: 0.5rem;
+    box-shadow: 0rem 0.5rem 2rem 0.5rem gainsboro;
+    background-color: bisque;
+    border-radius: 2rem;
+    background-repeat: no-repeat;
+    background-size: 101% 100%;
+}
+#content1{
+    background-image: url(../../assets/img/content1.jpg);
+    /*-moz-background-size: 100% 100%;*/
+}
+.title1{
+    font-size: 1.2rem;
+    color: gray;
+}
+#content2{
+    background-image: url(../../assets/img/content2.jpg);
+}
+.title2{
+    margin: 2rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 10%;
+}
+.article2{
+    color: white;
+    font-size: 3rem;
+}
+#contentFoot{
+    /*position: absolute;*/
+    margin: 12rem 0rem 0rem 0rem;
+    width: 100%;
+}
+#gameTitle,#gameContent,#buttonDescribe{
+    color: white;
+}
+#gameTitle,#gameContent{
+    display: inline-block;
+    width: 16rem;
+    white-space:nowrap;
+    overflow: hidden;
+    margin: 0rem 0rem 1rem 1.5rem;
+}
+#gameTitle{
+    font-size: 1.2rem;
+    height: 1.2rem;
+}
+#button{
+    margin-top: 0rem;
+    margin-right: 1.5rem; 
+    float: right;
+    height: 2rem;
+    width: 4rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    color:blue;
+    background-color: white;
+    text-align: center;
+    line-height: 2rem;
+    
+}
+#buttonDescribe{
+    font-size: 0.5rem;
+    float: right;
+    margin: 0rem 1.7rem 1rem 0rem;
+}
+/*板块3*/
+#content3{
+    background-color: white;
+}
+.titlePhoto{
+    background-image: url("../../assets/img/timg.gif");
+    background-repeat: no-repeat;
+    background-size: 110% 100%;
+    width: 100%;    
+    height: 23rem;
+    border-radius: 2rem 2rem 0rem 0rem;
+}
+/*板块4*/
+#content4{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: white;
+}
+#photoTitle{
+    width: 100%;
+    height: 7rem;
+}
+#contentPhoto{
+    height: 7rem;
+    width: 100%;
+    flex-grow: 1;
+    border-radius: 0rem 0rem 2rem 2rem;
+    background: url("../../assets/img/animationphoto.jpg");
+    background-size: auto 100%;
+    animation: photom 100s linear infinite; 
+}
+@keyframes photom{
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 1000% 0;
+    }
+}
+/*模块五*/
+#content5,#content6{
+    background-color: white;
+}
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    border-radius:2rem 2rem 0rem 0rem; 
+}
+#radio{
+    background: white;
+}
+/*模块六*/
+.item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#item1{
+    margin-top: 2rem;
+}
+.logo{
+    height: 4rem;
+    width: 4rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 20%;
+    margin-left: 1.5rem;
+    border:1px solid gainsboro;
+}
+.appTotalDetail{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.5px solid gainsboro;
+}
+.detail{
+    display: inline-block;
+    height: 100%;
+    width: 12rem;
+    white-space:nowrap;
+    overflow: hidden;
+}
+.appName{
+    margin: 0.7rem 0rem 0.5rem 1.5rem;
+    width: 12rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.appDetail{
+    font-size: 1rem;
+    color: gray;
+}
+#buttonDetail{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#button2{
+    display: inline-block;
+    width: 4rem;
+    height: 2rem;
+    margin-left: 1rem;
+    background-color: rgb(233, 233, 233);
+    border-radius: 1rem;
+    text-align: center;
+    line-height: 2rem;
+    color: blue;
+}
+#buttonDetail > #buttonDescribe{
+    color:gray;
+    margin-left: 1.27rem;
+}
+#item4 > .appTotalDetail{
+    border-bottom: none;
+}
+/*contentFoot*/

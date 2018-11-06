@@ -1,0 +1,139 @@
+/*photoHead*/
+.container2{
+    background-color: white;
+}
+.photoHead{
+    height: 30rem;
+    padding-top: 1rem;
+    width: 100%;
+    background-image: url("../../assets/img/content1.jpg");
+    background-size: 101% 100%;
+}
+.back{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: gainsboro;
+    background-color: grey;
+    position: fixed;
+    top: 1rem;
+    left: 90%;
+    line-height: 2rem;
+    text-align: center;
+}
+article{
+    font-size: 2rem;
+    margin: 0rem 1.5rem;
+    border: 0rem;
+    padding: 0rem;
+}
+p{
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    border: 0rem;
+    padding: 0rem;
+}
+.title1{
+    width: 20rem;
+    margin: 0rem 1.5rem 1rem 1.5rem;
+    font-size: 1.2rem;
+    color: gray;
+}
+img{
+    height: 30rem;
+    width: 100%;
+    /*max-width: 100%;
+    min-width: 100%;*/
+    background-size: 101% 100%;
+}
+#getApp{
+    background-color:rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#logo{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 1.5rem;
+    margin: 1.5rem 0rem 0rem 0rem;
+}
+#getApp h2{
+    color: blue;
+}
+#getApp p{
+    margin: 0rem;
+    color: grey;
+}
+#getApp div{
+    width: 4rem;
+    height: 2rem;
+    background-color: blue;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    line-height: 2rem;
+    margin: 1.5rem 0rem 0.25rem 0rem;
+}
+/* #getApp #buttonDecribe{
+    font-size: 0.5rem;
+    margin-bottom: 1.5rem;
+    color: grey;
+} */
+#page2foot{
+    height: 10rem;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#shareButton{
+    width: 7rem;
+    height: 2.5rem;
+    background-color:rgb(247, 247, 247);
+    border-radius: 0.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+}
+#buttonContent{
+    font-size: 1.2rem;
+}
+#getAppButtom{
+    background-color:rgb(247, 247, 247); 
+    margin: 0rem 10%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: fixed;
+    bottom: 0rem;
+    width: 80%;
+}
+#logo2{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 0.5rem;
+}
+#appName{
+    width: 60%;
+}
+#getButton{
+    width: 4rem;
+    height: 2rem;
+    background-color: grey;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    line-height: 2rem;
+}

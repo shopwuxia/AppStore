@@ -1,0 +1,169 @@
+.container3{
+    background-color: white;
+}
+.photoHead2_2{
+    background-image: url(../../assets/img/content2.jpg);
+    height: 30rem;
+    width: 100%;
+    background-size: 101% 100%;
+}
+.title2_2{
+    margin: 2rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 10%;
+}
+.article2_2{
+    color: white;
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+#contentFoot2_2{
+    /*position: absolute;*/
+    margin: 12rem 0rem 0rem 0rem;
+    width: 100%;
+}
+#gameTitle2_2,#gameContent2_2,#buttonDescribe2_2{
+    color: white;
+}
+#gameTitle2_2,#gameContent2_2{
+    display: inline-block;
+    width: 16rem;
+    white-space:nowrap;
+    overflow: hidden;
+    margin: 0rem 0rem 1rem 1.5rem;
+}
+#gameTitle2_2{
+    font-size: 1.2rem;
+    height: 1.2rem;
+}
+#button{
+    margin-top: 0rem;
+    margin-right: 1.5rem; 
+    float: right;
+    height: 2rem;
+    width: 4rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    color:blue;
+    background-color: white;
+    text-align: center;
+    line-height: 2rem;
+}
+#buttonDescribe2_2{
+    font-size: 0.5rem;
+    float: right;
+    margin: 0rem 1.7rem 1rem 0rem;
+}
+.back2_2{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: gainsboro;
+    background-color: grey;
+    position: fixed;
+    top: 1rem;
+    left: 90%;
+    line-height: 2rem;
+    text-align: center;
+}
+img{
+    height: 30rem;
+    width: 100%;
+    /*max-width: 100%;
+    min-width: 100%;*/
+    background-size: 101% 100%;
+}
+p{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+    border: 0rem;
+    padding: 0rem;
+}
+#getApp2_2{
+    background-color:rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#logo2_2{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 1.5rem;
+    margin: 1.5rem 0rem 0rem 0rem;
+}
+#getApp2_2 h2{
+    color: blue;
+}
+#getApp2_2 p{
+    margin: 0rem;
+    color: grey;
+}
+#getApp2_2 div{
+    width: 4rem;
+    height: 2rem;
+    background-color: blue;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    line-height: 2rem;
+    margin: 1.5rem 0rem 0.25rem 0rem;
+}
+#page2foot2_2{
+    height: 10rem;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#shareButton2_2{
+    width: 7rem;
+    height: 2.5rem;
+    background-color:rgb(247, 247, 247);
+    border-radius: 0.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+}
+#buttonContent2_2{
+    font-size: 1.2rem;
+}
+#getAppButtom2_2{
+    background-color:rgb(247, 247, 247); 
+    margin: 0rem 10%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: fixed;
+    bottom: 0rem;
+    width: 80%;
+}
+#logo2_2_2{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 0.5rem;
+}
+#appName2_2{
+    width: 60%;
+}
+#getButton2_2{
+    width: 4rem;
+    height: 2rem;
+    background-color: grey;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    line-height: 2rem;
+}

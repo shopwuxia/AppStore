@@ -1,0 +1,25 @@
+h2{
+    margin: 0rem;
+    border: 0rem;
+    font-size: 2rem;
+}
+.page1Head{
+    height: 100%;
+    width: 100%;
+}
+.message{
+    float: left;
+    margin: 0rem 0rem 0rem 1.7rem;
+}
+.date{
+    display: block;
+    color: gray;
+    font-size: 1rem;
+}
+.headImg{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0.5rem 1.7rem 0.5rem 0.5rem;
+    border-radius: 50%;
+    float: right;
+}

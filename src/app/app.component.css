@@ -1,0 +1,15 @@
+.appStore{
+    position: relative;
+    align-items: center;
+}
+.page1{
+    position: absolute;
+    z-index: 1;
+    /* visibility: hidden; */
+}
+.page2{
+    position: absolute;
+    top: 0rem;
+    z-index: 0;
+}
+

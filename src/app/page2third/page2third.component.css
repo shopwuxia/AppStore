@@ -1,0 +1,146 @@
+.container4{
+    background-color: white;
+}
+.titlePhoto2_3{
+    background-image: url("../../assets/img/timg.gif");
+    background-repeat: no-repeat;
+    background-size: 110% 100%;
+    width: 100%;    
+    height: 23rem;
+    /* border-radius: 2rem 2rem 0rem 0rem; */
+}
+article{
+    font-size: 2rem;
+    margin: 0rem 1.5rem;
+    border: 0rem;
+    padding: 0rem;
+}
+p{
+    margin: 1rem 1.5rem;
+    border: 0rem;
+    padding: 0rem;
+}
+.title2_3{
+    font-size: 1.2rem;
+    color: gray;
+}
+.back2_3{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: gainsboro;
+    background-color: grey;
+    position: fixed;
+    top: 1rem;
+    left: 90%;
+    line-height: 2rem;
+    text-align: center;
+}
+img{
+    height: 30rem;
+    width: 100%;
+    background-size: 101% 100%;
+}
+p{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+    border: 0rem;
+    padding: 0rem;
+}
+#getApp2_3{
+    background-color:rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#logo2_3{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 1.5rem;
+    margin: 1.5rem 0rem 0rem 0rem;
+}
+#getApp2_3 h2{
+    color: blue;
+}
+#getApp2_3 p{
+    margin: 0rem;
+    color: grey;
+}
+#getApp2_3 div{
+    width: 4rem;
+    height: 2rem;
+    background-color: blue;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    line-height: 2rem;
+    margin: 1.5rem 0rem 0.25rem 0rem;
+}
+#page2foot2_3{
+    height: 10rem;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#shareButton2_3{
+    width: 7rem;
+    height: 2.5rem;
+    background-color:rgb(247, 247, 247);
+    border-radius: 0.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+}
+#buttonContent2_3{
+    font-size: 1.2rem;
+}
+#getApp2_3 #buttonDecribe2_3{
+    font-size: 0.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0rem;
+    color: grey;
+}
+#getAppButtom2_3{
+    background-color:rgb(247, 247, 247); 
+    margin: 0rem 10%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: fixed;
+    bottom: 0rem;
+    width: 80%;
+}
+#logo2_3_2{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 0.5rem;
+}
+#appName2_3{
+    width: 60%;
+}
+#appName2_3 p{
+    white-space:nowrap;
+    overflow: hidden;
+}
+#getButton2_3{
+    width: 4rem;
+    height: 2rem;
+    background-color: grey;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    line-height: 2rem;
+}

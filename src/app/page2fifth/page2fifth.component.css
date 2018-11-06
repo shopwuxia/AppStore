@@ -1,0 +1,154 @@
+.container6{
+    background-color: white;
+}
+.photoHead2_5{
+    height: 30rem;
+    width: 100%;
+}
+article{
+    font-size: 2rem;
+    margin: 0rem 1.5rem;
+    border: 0rem;
+    padding: 0rem;
+}
+p{
+    margin: 1rem 1.5rem;
+    border: 0rem;
+    padding: 0rem;
+}
+.title2_5{
+    font-size: 1.2rem;
+    color: gray;
+}
+.titlePhoto2_5{
+    width: 100%;    
+    height: 23rem;
+}
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+#radio2_5{
+    background: white;
+}
+.back2_5{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: gainsboro;
+    background-color: grey;
+    position: fixed;
+    top: 1rem;
+    left: 90%;
+    line-height: 2rem;
+    text-align: center;
+}
+img{
+    height: 30rem;
+    width: 100%;
+    background-size: 101% 100%;
+}
+p{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 1.2rem;
+    border: 0rem;
+    padding: 0rem;
+}
+#getApp2_5{
+    background-color:rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#logo2_5{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 1.5rem;
+    margin: 1.5rem 0rem 0rem 0rem;
+}
+#getApp2_5 h2{
+    color: blue;
+}
+#getApp2_5 p{
+    margin: 0rem;
+    color: grey;
+}
+#getApp2_5 div{
+    width: 4rem;
+    height: 2rem;
+    background-color: blue;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    line-height: 2rem;
+    margin: 1.5rem 0rem 0.25rem 0rem;
+}
+#page2foot2_5{
+    height: 10rem;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#shareButton2_5{
+    width: 7rem;
+    height: 2.5rem;
+    background-color:rgb(247, 247, 247);
+    border-radius: 0.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+}
+#buttonContent2_5{
+    font-size: 1.2rem;
+}
+#getApp2_5 #buttonDecribe2_5{
+    font-size: 0.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 0rem;
+    color: grey;
+}
+#getAppButtom2_5{
+    background-color:rgb(247, 247, 247); 
+    margin: 0rem 10%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: fixed;
+    bottom: 0rem;
+    width: 80%;
+}
+#logo2_5_2{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 0.5rem;
+}
+#appName2_5{
+    width: 60%;
+}
+#appName2_5 p{
+    white-space:nowrap;
+    overflow: hidden;
+}
+#getButton2_5{
+    width: 4rem;
+    height: 2rem;
+    background-color: grey;
+    color: white;
+    border-radius: 1rem;
+    text-align: center;
+    line-height: 2rem;
+}
