@@ -18,14 +18,20 @@ export class Page1ContentComponent implements OnInit {
   page1_page2Animation(page2){
     var appStore = document.getElementById("appStore");
     var winHeight = screen.availHeight;
+    var scrolltop = $("html").scrollTop();
     var page1 = document.getElementById("page1");
     var height = page2.outerHeight(true);
     var width = page2.width();
     var changeWidth = 27*12;
     var changeHeight = 30*12;
+    var changeTop;
+    var changeLeft;
     var changeWidthSpeed = (width-27*12)/100;
     var changeHeightSpeed = (height-30*12)/100;
+    var changeTopSpeed;
+    var changeLeftSpeed;
     var i = 1;
+    var j = 1;
     if (winHeight > height)
     {
       appStore.style.height = winHeight.toString() + "px";
@@ -36,14 +42,116 @@ export class Page1ContentComponent implements OnInit {
     }
     appStore.style.overflow = "hidden";
     page1.style.filter = "blur(100px)";
-    setTimeout(() => {
-      page2.css("z-index","2");
-      scroll(0,0);//固定从顶部显示
-      page2.css("height","30rem");
-      page2.css("width","27rem");
-      page2.css("overflow","hidden");
-      page2.css("display","block");
-    }, 10);
+    page1.style.top = "-" + scrolltop + "px";
+    page2.css("z-index","2");
+    scroll(0,0);//固定从顶部显示
+    page2.css("height","30rem");
+    page2.css("width","27rem");
+    page2.css("overflow","hidden");
+    page2.css("display","block");
+    page2.css("top",page2.position().top - scrolltop + "px");
+    changeTop = page2.position().top;
+    changeLeft = page2.position().left;
+    changeTopSpeed = changeTop/20;
+    changeLeftSpeed = changeLeft/20;
+    var slideTopLeft = setInterval(()=>{
+      changeTop = changeTop - changeTopSpeed;
+      changeLeft = changeLeft - changeLeftSpeed;
+      if( j==20 )
+      {
+        clearInterval(slideTopLeft)
+      }
+      page2.css("top",changeTop + "px");
+      page2.css("left",changeLeft + "px");
+      page2.css("overflow","hidden"); 
+      j++;
+    },5)
+    var slide = setInterval(()=>{
+      changeWidth = changeWidth + changeWidthSpeed;
+      changeHeight = changeHeight + changeHeightSpeed;
+      
+      if( i==100 )
+      {
+        clearInterval(slide);
+      }
+      page2.css("height",changeHeight.toString());
+      page2.css("width",changeWidth.toString());
+      
+      page2.css("overflow","hidden"); 
+      i++;
+    },5)
+    // page2.css("margin_top","4rem");
+    // setTimeout(()=>{
+    //   page2.css("margin_top","5rem")
+    // },600);
+  }
+
+  page1_page2Animations(page2,container){
+    var appStore = document.getElementById("appStore");
+    var winHeight = screen.availHeight;
+    var scrolltop = $("html").scrollTop();
+    var page1 = document.getElementById("page1");
+    var height = page2.outerHeight(true);
+    var width = document.body.clientWidth; //page2.width();//
+    var changeTop;
+    var changeLeft;
+    var changeWidth = 27*12;
+    var changeHeight = 30*12;
+    var changeWidthSpeed;
+    var changeTopSpeed;
+    var changeLeftSpeed;
+    var i = 1;
+    var j = 1;
+
+    if (width > 450)
+    {
+      width = document.body.clientWidth - 200;
+    }
+    changeWidthSpeed = (width-27*12)/100;
+    
+    if (winHeight > height)
+    {
+      appStore.style.height = winHeight.toString() + "px";
+    }
+    else
+    {
+      appStore.style.height = height.toString() + "px";
+    }
+    if(height < winHeight)
+    {
+      var changeHeightSpeed = (winHeight-30*12)/100;
+      container.style.height = "100%";
+    }
+    else
+    {
+      var changeHeightSpeed = (height-30*12)/100;
+    }
+    appStore.style.overflow = "hidden";
+    page1.style.filter = "blur(100px)";
+    page1.style.top = "-" + scrolltop + "px";
+    page2.css("z-index","2");
+    scroll(0,0);//固定从顶部显示
+    page2.css("height","30rem");
+    page2.css("width","27rem");
+    page2.css("overflow","hidden");
+    page2.css("display","block");
+    page2.css("top",page2.position().top - scrolltop + "px");
+    changeTop = page2.position().top;
+    changeLeft = page2.position().left;
+    changeTopSpeed = changeTop/20;
+    changeLeftSpeed = changeLeft/20;
+    var slideTopLeft = setInterval(()=>{
+      changeTop = changeTop - changeTopSpeed;
+      changeLeft = changeLeft - changeLeftSpeed;
+      if( j==20 )
+      {
+        clearInterval(slideTopLeft)
+      }
+      page2.css("top",changeTop + "px");
+      page2.css("left",changeLeft + "px");
+      page2.css("overflow","hidden"); 
+      j++;
+    },5)
     var slide = setInterval(()=>{
       changeWidth = changeWidth + changeWidthSpeed;
       changeHeight = changeHeight + changeHeightSpeed;
@@ -56,7 +164,8 @@ export class Page1ContentComponent implements OnInit {
       page2.css("overflow","hidden"); 
       i++;
     },5)
-  }
+  } 
+
   //图片到达顶部时，X图标改变样式,以及底部的获取div出现或消失
   public flag: number = 0;
   change(img,getAppDiv,animationPDiv,xbutton,getAppButtomDiv){
@@ -113,7 +222,8 @@ export class Page1ContentComponent implements OnInit {
     var xbutton = $(".back");
     var getAppButtomDiv = $("#getAppButtom");
     var animationPDiv = $("#animation2_1");
-    this.page1_page2Animation(page2_1);
+    setTimeout(this.page1_page2Animation,100,page2_1);
+    //this.page1_page2Animation(page2_1);
     this.change(img,getAppDiv,animationPDiv,xbutton,getAppButtomDiv);
   }
   onMousedown(){
@@ -190,7 +300,9 @@ export class Page1ContentComponent implements OnInit {
     cdiv.style.height = "29rem";
   }
   onSelected6(){
-    window.location.href = "https://wenku.baidu.com/";
+    var page2_6 = $("#page2-6");
+    var container = document.getElementById("container7");
+    this.page1_page2Animations(page2_6,container);
   }
   onMousedown6(){
     var cdiv = document.getElementById("content6");

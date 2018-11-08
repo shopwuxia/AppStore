@@ -14,9 +14,12 @@ export class Page2fifthComponent implements OnInit {
 
   page2_5(){
     var page2_5 = document.getElementById("page2-5");
+    var page1Content = document.getElementById("content5");
+    page2_5.style.width = document.body.clientWidth + "px";
     this.page2.decidePage2site(page2_5);
     this.page2.decidePage2width(page2_5);
     this.page2.decidePage2radius(page2_5);
+    this.page2.setpage2Position(page1Content,page2_5);
     page2_5.style.display = "none";
   }
 

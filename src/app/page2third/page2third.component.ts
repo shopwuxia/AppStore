@@ -13,10 +13,13 @@ export class Page2thirdComponent implements OnInit {
 
   page2_3(){
     var page2_3 = document.getElementById("page2-3");
+    var page1Content = document.getElementById("content3");
+    page2_3.style.width = document.body.clientWidth + "px";
     this.page2.decidePage2site(page2_3);
     this.page2.decidePage2width(page2_3);
     this.page2.decidePage2radius(page2_3);
-    page2_3.style.display = "none";
+    this.page2.setpage2Position(page1Content,page2_3);
+    page2_3.style.display = "none"; 
   }
 
   onSelected2_3(){

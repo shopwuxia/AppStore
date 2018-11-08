@@ -33,9 +33,15 @@
     overflow: hidden;
     margin: 0rem 0rem 1rem 1.5rem;
 }
+#gameContent2_2{
+    width: 70%;
+}
 #gameTitle2_2{
     font-size: 1.2rem;
-    height: 1.2rem;
+    height: 2rem;
+    width: 70%;
+    line-height: 1.5rem;
+    margin-bottom: 0rem;
 }
 #button{
     margin-top: 0rem;

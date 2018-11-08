@@ -14,10 +14,13 @@ export class Page2fourthComponent implements OnInit {
 
   page2_4(){
     var page2_4 = document.getElementById("page2-4");
+    var page1Content = document.getElementById("content4");
+    page2_4.style.width = document.body.clientWidth + "px";
     this.page2.decidePage2site(page2_4);
     this.page2.decidePage2width(page2_4);
     this.page2.decidePage2radius(page2_4);
-    page2_4.style.display = "none";
+    this.page2.setpage2Position(page1Content,page2_4);
+    page2_4.style.display = "none";  
   }
 
   onSelected2_4(){

@@ -49,11 +49,20 @@ export class Page2firstComponent implements OnInit {
       page2.style.borderRadius = "2rem 2rem 0rem 0rem";
     }
   }
+  setpage2Position(page1Content,page2){
+    var left = page1Content.getBoundingClientRect().left;
+    var top = page1Content.getBoundingClientRect().top + 3;
+    page2.style.left = left + "px";
+    page2.style.top = top + "px";
+  }
   page2_1(){
     var page2_1 = document.getElementById("page2-1");
+    page2_1.style.width = document.body.clientWidth + "px";
+    var page1Content = document.getElementById("content1");
     this.decidePage2site(page2_1);
     this.decidePage2width(page2_1);
     this.decidePage2radius(page2_1);
+    this.setpage2Position(page1Content,page2_1);
     page2_1.style.display = "none";
   }
 

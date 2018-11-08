@@ -10,6 +10,8 @@ import { Page2secondComponent } from './page2second/page2second.component';
 import { Page2thirdComponent } from './page2third/page2third.component';
 import { Page2fourthComponent } from './page2fourth/page2fourth.component';
 import { Page2fifthComponent } from './page2fifth/page2fifth.component';
+import { Page2sixthComponent } from './page2sixth/page2sixth.component';
+import { AlertModule } from 'ngx-bootstrap';
 
 @NgModule({
   declarations: [
@@ -21,10 +23,11 @@ import { Page2fifthComponent } from './page2fifth/page2fifth.component';
     Page2secondComponent,
     Page2thirdComponent,
     Page2fourthComponent,
-    Page2fifthComponent
+    Page2fifthComponent,
+    Page2sixthComponent
   ],
   imports: [
-    BrowserModule
+    AlertModule.forRoot(),BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
